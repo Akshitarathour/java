@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class grosssalary {
+    public static void main(String[] args) 
+    { Scanner sc = new Scanner(System.in);
+    System.out.println("enter basic salary");
+    double basic = sc.nextDouble();
+      double da=(20.0/100)*basic;
+      double hra=(40.0/100)*basic;
+      double gs=basic+da+hra;
+        System.out.println("gross salary=rs"+gs);
+        sc.close();
+    }
+    
+}
