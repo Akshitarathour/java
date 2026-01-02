@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class calculator
+{
+    public static void main (String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first number");
+        double num1=sc.nextDouble();
+         System.out.println("enter second number");
+        double num2=sc.nextDouble();
+      System.out.println("enter your choice");
+      System.out.println("1.Addition");
+      System.out.println(" 2.subtraction");
+      System.out.println(" 3.multiply");
+      System.out.println(" 4.divide");
+      int choice=sc.nextInt();
+      double result;
+      switch(choice)
+    {
+      case 1:
+      result=num1+num2;
+      System.out.println("addition="+result);
+      break;
+      case 2:
+      result=num1-num2;
+      System.out.println("Subtraction="+result);
+      break;
+      case 3:
+      result=num1*num2;
+      System.out.println("multilplication="+result);
+      break;
+      case 4:
+      if(num2!=0) {
+      result=num1/num2;
+      System.out.println("division="+result);
+       }  else {
+        System.out.println("cant divide by 0");
+    }            
+    break;
+        default:
+        System.out.println("invalid choice");
+        sc.close();
+    }
+}}
