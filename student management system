@@ -1,0 +1,133 @@
+import java.util.*;
+ class Studentmngment {
+    int rollno ;
+    String name;
+    String course;
+    int semester;
+    int marks;
+
+ void display(){
+    System.out.println("roll no: " +rollno);
+   System.out.println("name: " +name);
+    System.out.println("course: " +course);
+     System.out.println("semester: " +semester);
+      System.out.println("marks: " +marks);
+  } 
+      Studentmngment(int rollno,String name,String course, int semester, int marks){
+       
+       this.rollno=rollno;
+        this.name=name;
+         this.course=course;
+         this.semester=semester;
+          this.marks=marks;
+    }
+public static class student{
+      public static void main(String[] args) {
+         ArrayList<Studentmngment> studentList= new ArrayList <Studentmngment>();
+         int num;
+         int rollno, semester, marks;
+         String name, course;
+
+         Scanner sc=new Scanner(System.in);
+         System.out.println("enter number of student");
+         num=sc.nextInt();
+         sc.nextLine();
+        for (int i = 0; i < num; i++) {
+
+    System.out.print("Enter roll number:");
+    rollno = sc.nextInt();
+    sc.nextLine();
+
+    System.out.print("Enter name:");
+    name = sc.nextLine();
+
+    System.out.print("Enter course:");
+    course = sc.nextLine();
+
+    System.out.print("Enter semester:");
+    semester = sc.nextInt();
+    sc.nextLine();
+
+    System.out.print("Enter marks:");
+    marks = sc.nextInt();
+    sc.nextLine();
+
+    Studentmngment s = new Studentmngment(rollno, name, course, semester, marks);
+    studentList.add(s);
+}
+            System.out.println("enter your choice");
+             System.out.println("1. add student");
+              System.out.println("2.search a student");
+               System.out.println("3.display all students");
+                System.out.println("4. delete a student");
+             System.out.println("5.exit");
+                int choice=sc.nextInt();
+                int n;
+                switch(choice)
+    {
+                  case 1:
+                   System.out.println("enter roll number");
+       rollno=sc.nextInt();
+        System.out.println("enter name");
+        sc.nextLine();
+        name=sc.nextLine();
+         System.out.println("enter course"); 
+         course=sc.nextLine();
+          System.out.println("enter semester");
+          semester=sc.nextInt();
+          sc.nextLine();
+           System.out.println("enter marks");
+            marks=sc.nextInt();
+            
+             Studentmngment s2=new Studentmngment(rollno,name,course,semester,marks);
+                  studentList.add(s2);
+                  break;
+                  case 2:
+                  
+                   System.out.println("enter desired student roll no");
+                   n=sc.nextInt();
+                   
+                   for( Studentmngment s1: studentList)
+                   {
+                     if(s1.rollno==n){
+                        s1.display();
+                     }
+                   }
+                   break;
+                   case 3:
+                  
+                   for(Studentmngment s3: studentList)
+                   s3.display();
+                   break;
+                   case 4:
+                   System.out.println("enter the desired roll number for deletion");
+                   n=sc.nextInt();
+
+boolean deleted=false;
+                   Iterator<Studentmngment> it = studentList.iterator();
+while(it.hasNext()){
+    if(it.next().rollno == n){
+        it.remove();
+         deleted = true;
+            System.out.println("Student deleted successfully");
+            System.out.println("Updated student list:");
+for (Studentmngment s : studentList)
+    s.display();
+
+        break;
+    }
+}
+
+
+
+                  case 5:
+                  System.out.println("program exited successfully");
+                  System.exit(0);
+                   break;
+                   
+}}  
+         }   
+      }
+      
+   
+   
