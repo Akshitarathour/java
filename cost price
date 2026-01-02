@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class costprice {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter selling price");
+        double sp=sc.nextDouble();
+        System.out.println("enter profit");
+        double pr=sc.nextDouble();
+        double cp=sp-pr;
+        System.out.println("cost price is"+cp);
+        sc.close();
+    }
+}
