@@ -1,0 +1,59 @@
+public class birthday 
+{
+    public static void main(String[] args) 
+        throws InterruptedException{
+   
+        System.out.println(" HHHH     HHHH         AA         PPPPPPPPPPP  PPPPPPPPPPP   YY           YY ");
+        System.out.println(" HHHH     HHHH         AA         PP       PP  PP       PP    YY         YY ");
+        System.out.println(" HHHH     HHHH        AAAA        PP       PP  PP       PP     YY       YY ");
+        System.out.println(" HHHHHHHHHHHHH       AA  AA       PP       PP  PP       PP      YY     YY  ");
+        System.out.println(" HHHHHHHHHHHHH      AA    AA      PPPPPPPPPPP  PPPPPPPPPPP       YYYYYYY ");
+        System.out.println(" HHHH     HHHH     AAAAAAAAAA     PP           PP                   YY ");
+        System.out.println(" HHHH     HHHH    AA        AA    PP           PP                  YY ");
+        System.out.println(" HHHH     HHHH   AA          AA   PP           PP                 YY ");
+
+        System.out.println("\n");
+        Thread.sleep(200);
+        Thread.sleep(200);
+        
+        System.out.println(" ");
+        Thread.sleep(200);
+        Thread.sleep(200);
+
+        System.out.println("BBBBBBBBBBB    IIIIIIIIIIIII   RRRRRRRRRRRR    TTTTTTTTTTTTTT   HHHH       HHHH    ");
+        System.out.println("BB        BB        II         RR        RR          TT         HHHH       HHHH     ");
+        System.out.println("BB        BB        II         RR       RR           TT         HHHH       HHHH    ");
+        System.out.println("BBBBBBBBBB          II         RRRRRRRRRRR           TT         HHHHHHHHHHHHHHH     ");
+        System.out.println("BB        BB        II         RR       RR           TT         HHHH       HHHH    ");
+        System.out.println("BB        BB        II         RR        RR          TT         HHHH       HHHH      ");
+        System.out.println("BBBBBBBBBBB    IIIIIIIIIIIII   RR         RR         TT         HHHH       HHHH     ");
+        System.out.println(" ");
+        Thread.sleep(200);
+        Thread.sleep(200);
+        System.out.println("\n");
+        System.out.println("  DDDDDDDDDDD            AA      YY         YY  ");
+        System.out.println("  DD          D         AAAA      YY       YY   ");
+        System.out.println("  DD           D       AA  AA      YY    YY    ");
+        System.out.println("  DD           D      AA    AA        YYYY    ");
+        System.out.println("  DD          D      AAAAAAAAAA       YYY    ");
+        System.out.println("  DD         D      AAA      AAA      YY ");
+        System.out.println("  DDDDDDDDDDD      AAAA      AAAA     Y");
+        System.out.println("\n");
+        System.out.println(" ");
+        Thread.sleep(200);
+        Thread.sleep(200);
+        System.out.println("                    * *                      ");
+        System.out.println("                    | |                      ");
+        System.out.println("              ______|_|_______              ");
+        System.out.println("             |~~~~~~~~~~~~~~~~|             ");
+        System.out.println("         ____|~~~~~~~~~~~~~~~~|_____        ");
+        System.out.println("        |    HAPPY    BIRTHDAY      |       ");
+        System.out.println("   _____|___________________________|_____  ");
+        System.out.println("  |            AKSHU.. 24 OCT             | ");
+        System.out.println("  |_______________________________________| ");
+        System.out.println(" ");
+        Thread.sleep(200);
+        Thread.sleep(200);
+        System.out.println("\n");
+    }
+}    
